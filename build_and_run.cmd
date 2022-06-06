@@ -2,10 +2,12 @@ rem for windows
 
 cls
 
-cmake ./build
+mkdir build
+
+cmake -B ./build
 
 cd ./build
 
-make
+
 
 ./ProtoBot
