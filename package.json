@@ -1,0 +1,26 @@
+{
+  "name": "protobot",
+  "version": "3.0.0",
+  "description": "A multi-purpose discord protogen",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProtoBot-Repos/ProtoBot.git"
+  },
+  "author": "Stanford47",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ProtoBot-Repos/ProtoBot/issues"
+  },
+  "homepage": "https://github.com/ProtoBot-Repos/ProtoBot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^1.1.0",
+    "@discordjs/rest": "^1.0.1",
+    "@types/node": "^18.6.4",
+    "@zuzak/owo": "^1.16.1",
+    "discord.js": "^14.1.2"
+  }
+}

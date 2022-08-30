@@ -1,4 +1,3 @@
-build
-CMakeCache.txt
-CMakeFiles
+node_modules
+package-lock.json
 private
