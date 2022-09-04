@@ -14,7 +14,7 @@ A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
   #### Fun:
   - [x] RNG
   - [ ] OwOify
-  - [ ] Magic 8-ball
+  - [x] Magic 8-ball
   
   #### Utilities:
   - [ ] Server settings
