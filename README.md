@@ -12,7 +12,7 @@ A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
   - [ ] Timeout
   
   #### Fun:
-  - [ ] RNG
+  - [x] RNG
   - [ ] OwOify
   - [ ] Magic 8-ball
   
