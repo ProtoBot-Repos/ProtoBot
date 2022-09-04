@@ -16,7 +16,7 @@ module.exports = {
         var whyareyoubanned = interaction.options.getString("reason");
 
         if (whyareyoubanned == null || whyareyoubanned == undefined) whyareyoubanned = "No reason given.";
-        if (!interaction.guild.members.me.permissions.has(4)) return await interaction.reply({ content: "I do not have the permission `BAN_MEMBERS` <:deval:811990530706636820>", emphemeral: true });
+        if (!interaction.guild.members.me.permissions.has(4)) return await interaction.reply({ content: "I do not have the permission `BAN_MEMBERS` <:deval:811990530706636820>", ephemeral: true });
         
         try {
             interaction.guild.members.cache.get(badman.id).ban({
@@ -27,7 +27,7 @@ module.exports = {
         } catch (err) {
             console.error(err);
 
-            return await interaction.reply({ content: `There has been an error while banning that user.\n returned error: \`${err}\`\n If this issue keeps happening, please make an issue with the tag \`Bug\` at  https://github.com/ProtoBot-Repos/ProtoBot/issues`, emphemeral: true });
+            return await interaction.reply({ content: `There has been an error while banning that user.\n returned error: \`${err}\`\n If this issue keeps happening, please make an issue with the tag \`Bug\` at  https://github.com/ProtoBot-Repos/ProtoBot/issues`, ephemeral: true });
         }
     }
 }

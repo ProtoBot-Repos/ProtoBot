@@ -6,8 +6,14 @@ module.exports = {
         console.log("ready!!!!");
 
         client.user.setPresence({
-            activities: [{ name: "soon..." }],
-            status: "idle"
+            status: "idle",
+            afk: false,
+            activities: [
+                {
+                    name: "soon",
+                    type: "Custom"
+                }
+            ]
         });
     }
 }

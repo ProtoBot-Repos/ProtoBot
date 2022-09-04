@@ -8,7 +8,7 @@ module.exports = {
     devOnly: true,
 
     async execute(interaction) {
-        await interaction.reply({ content: ":<", emphemeral: true });
+        await interaction.reply({ content: ":<", ephemeral: true });
 
         interaction.client.destroy();
 

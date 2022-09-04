@@ -21,6 +21,8 @@
     "@discordjs/rest": "^1.0.1",
     "@types/node": "^18.6.4",
     "@zuzak/owo": "^1.16.1",
-    "discord.js": "^14.1.2"
+    "discord-api-types": "^0.37.5",
+    "discord.js": "^14.1.2",
+    "random-org": "^2.2.0"
   }
 }

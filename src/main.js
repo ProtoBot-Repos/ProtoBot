@@ -48,3 +48,14 @@ for (const file of event_f) {
 }
 
 client.login(config.Discord.token);
+
+// client.user.setPresence({
+//     status: "idle",
+//     afk: false,
+//     activities: [
+//         {
+//             name: "soon",
+//             type: "Custom"
+//         }
+//     ]
+// });

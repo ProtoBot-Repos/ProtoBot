@@ -9,7 +9,7 @@ module.exports = {
     devOnly: true,
 
     async execute(interaction) {
-        await interaction.deferReply({ content: "Restarting..." ,  emphemeral: true });
+        await interaction.deferReply({ content: "Restarting..." ,  ephemeral: true });
 
         const rel = child_process.fork("./src/deploy-commands.js");
 
