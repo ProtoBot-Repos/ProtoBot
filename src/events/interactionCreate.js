@@ -23,7 +23,7 @@ module.exports = {
 
             return await interaction.reply({
                 content: `There was an issue executing the command \`${interaction.commandName}\`.\nThe returned error is \`\`\`\n${err}\`\`\`\nIf this error keeps happening, please create an issue at https://github.com/ProtoBot-Repos/Protobot/Issues with the error message.`,
-                emphemeral: true
+                ephemeral: true
             });
         }
     }

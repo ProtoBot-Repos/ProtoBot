@@ -10,11 +10,8 @@ module.exports = {
     devOnly: true,
 
     async execute(interaction) {
-        await interaction.reply("Restarting");
-
-        const awaawrwr = child.fork("./start.ps1");
-
         interaction.client.destroy();
-        process.exit(0);
+
+        child.fork()
     }
 }
