@@ -19,3 +19,8 @@ const child = require("node:child_process");
 // finish later tbh
 
 console.log(`Current running node version: ${child.execSync("node --version")}`);
+
+console.log("deploying commands");
+child.fork("./src/deploy-commands.js");
+
+child.fork("./src/main.js");

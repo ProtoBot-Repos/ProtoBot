@@ -12,6 +12,6 @@ module.exports = {
     async execute(interaction) {
         interaction.client.destroy();
 
-        child.fork()
+        child.fork("./start.js");
     }
 }
