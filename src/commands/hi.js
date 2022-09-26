@@ -8,6 +8,6 @@ module.exports = {
     devOnly: true,
 
     async execute(interaction) {
-        return interaction.reply("hewwoooo!!!! :3");
+        return interaction.reply("h-hewwoooo!!!! :3");
     },
 }

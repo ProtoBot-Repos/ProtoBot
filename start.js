@@ -1,5 +1,5 @@
-const fs = require("node:fs");
-const child = require("node:child_process");
+const fs = require("fs");
+const child = require("child_process");
 
 // console.log("checking for node_modules...");
 

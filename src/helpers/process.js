@@ -1,5 +1,5 @@
-const child = require("node:child_process");
-const fs = require("node:fs");
+const child = require("child_process");
+const fs = require("fs");
 
 class Process {
     /**
@@ -24,3 +24,5 @@ class Process {
 }
 
 module.exports = Process;
+
+// finish after all commands done (or when needed)

@@ -2,9 +2,10 @@ const fs = require("fs");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord.js");
 const config = require("../private/config.json");
+const checkIsWindows = require("./helpers/check-os");
 
 const commands = [];
-const command_f = fs.readdirSync(process.cwd() + "\\src\\commands").filter(f => f.endsWith(".js"));
+const command_f = fs.readdirSync("./src/commands").filter(f => f.endsWith(".js"));
 
 for (const file of command_f) {
     const command = require(`./commands/${file}`);

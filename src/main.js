@@ -2,6 +2,7 @@ const config = require("../private/config.json");
 const Discord = require("discord.js");
 const path = require("path");
 const fs = require("fs");
+const checkIsWindows = require("./helpers/check-os");
 
 const client = new Discord.Client({
     intents: [
@@ -25,9 +26,9 @@ const client = new Discord.Client({
 });
 
 //init or something
-const event_f = fs.readdirSync(process.cwd() + "\\src\\events").filter(f => f.endsWith(".js"));
+const event_f = fs.readdirSync("./src/events").filter(f => f.endsWith(".js"));
 client.commands = new Discord.Collection();
-const command_f = fs.readdirSync(process.cwd() + "\\src\\commands").filter(f => f.endsWith(".js"));
+const command_f = fs.readdirSync("./src/commands").filter(f => f.endsWith(".js"));
 
 /* Command handler */
 for (const file of command_f) {

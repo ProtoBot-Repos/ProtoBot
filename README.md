@@ -9,28 +9,12 @@ A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
   #### Moderation:
   - [x] Ban
   - [ ] Kick
-  - [ ] Timeout
+  - [x] Timeout
   
   #### Fun:
   - [x] RNG
   - [ ] OwOify
   - [x] Magic 8-ball
-  
-  #### Utilities:
-  - [ ] Server settings
-  - [ ] Calculator
-  
-  
-## Message Commands
-  #### Moderation:
-  - [ ] Ban
-  - [ ] Kick
-  - [ ] Timeout
-  
-  #### Fun:
-  - [ ] RNG
-  - [ ] OwOify
-  - [ ] Magic 8-ball
   
   #### Utilities:
   - [ ] Server settings

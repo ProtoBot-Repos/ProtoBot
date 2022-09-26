@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName("8-ball")
         .setDescription("The Magic 8 Ball has the answer to all of your questions")
-        .addStringOption(o => o.setName("question").setDescription("your question to the 8 Ball"))
+        .addStringOption(o => o.setName("question").setDescription("your question to the 8 Ball").setRequired(true))
     ,
     devOnly: false,
 
