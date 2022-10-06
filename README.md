@@ -8,7 +8,7 @@ A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
 ## Slash Commands
   #### Moderation:
   - [x] Ban
-  ~~- [ ] Kick~~ (Being put off for the forseeable future)
+  - [x] ~~Kick~~ (Being put off for the forseeable future)
   - [x] Timeout
   
   #### Fun:
