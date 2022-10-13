@@ -16,7 +16,7 @@ module.exports = {
             if (command.devOnly && !config.Discord.devs.includes(interaction.user.id)) return await interaction.reply({
                 content: "You are not a developer of this bot. That means you cannot use this command",
                 emphemeral: true
-             }) 
+            });
 
             await command.execute(interaction);
         } catch (err) {
@@ -25,13 +25,13 @@ module.exports = {
                 token: config.Discord.webhooks.errors.token
             }).send({
                 embeds:
-                [
-                    new Discord.EmbedBuilder()
-                        .setColor(0xFF0000)
-                        .setTitle("Uncaught Exception")
-                        .setDescription(`\`\`\`${err.name}\n${err.message}\n\n${err.stack}\`\`\``)
-                ]
-            })
+                    [
+                        new Discord.EmbedBuilder()
+                            .setColor(0xFF0000)
+                            .setTitle("Uncaught Exception")
+                            .setDescription(`\`\`\`${err.name}\n${err.message}\n\n${err.stack}\`\`\``)
+                    ]
+            });
 
             return await interaction.reply({
                 content: `There was an issue executing the command \`${interaction.commandName}\`.\nThe returned error is \`\`\`\n${err}\`\`\`\nIf this error keeps happening, please create an issue at https://github.com/ProtoBot-Repos/Protobot/Issues with the error message.`,
