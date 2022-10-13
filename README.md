@@ -17,7 +17,7 @@ A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
   - [x] Magic 8-ball
   
   #### Utilities:
-  - [ ] Server settings
+  - [x] ~~Server settings~~ (Put off until needed)
   - [ ] Calculator
   
   ### More features and commands will be added over time
