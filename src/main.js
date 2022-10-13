@@ -48,8 +48,8 @@ for (const file of event_f) {
     if (event.once) {
         client.once(event.name, (...args) => event.execute(...args));
     } else {
-        //client.on(event.name, (...args) => event.execute(...args));
-        client.on("messageCreate", (...args) => console.log("hhhhhhh"))
+        client.on(event.name, (...args) => event.execute(...args));
+        //client.on("messageCreate", (...args) => console.log("hhhhhhh"))
     }
 }
 
