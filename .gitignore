@@ -3,7 +3,9 @@ package-lock.json
 private
 
 ./src/helpers/process.js
+./src/helpers/calculator
 
 a.js
 a.ts
 r.sh
+

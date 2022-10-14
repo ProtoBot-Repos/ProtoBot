@@ -1,6 +1,6 @@
 const config = require("../private/config.json");
 const Discord = require("discord.js");
-const path = require("path");
+// const path = require("path");
 const fs = require("fs");
 // const checkIsWindows = require("./helpers/check-os");
 
@@ -22,6 +22,10 @@ const client = new Discord.Client({
         Discord.GatewayIntentBits.GuildWebhooks,
         Discord.GatewayIntentBits.Guilds,
         Discord.GatewayIntentBits.MessageContent
+    ],
+    partials: [
+        Discord.Partials.Channel,
+        Discord.Partials.Message
     ]
 });
 
@@ -45,6 +49,7 @@ for (const file of event_f) {
         client.once(event.name, (...args) => event.execute(...args));
     } else {
         client.on(event.name, (...args) => event.execute(...args));
+        //client.on("messageCreate", (...args) => console.log("hhhhhhh"))
     }
 }
 
