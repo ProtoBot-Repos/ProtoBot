@@ -21,7 +21,8 @@ const client = new Discord.Client({
         Discord.GatewayIntentBits.GuildVoiceStates,
         Discord.GatewayIntentBits.GuildWebhooks,
         Discord.GatewayIntentBits.Guilds,
-        Discord.GatewayIntentBits.MessageContent
+        Discord.GatewayIntentBits.MessageContent,
+        Discord.GatewayIntentBits.GuildMessages
     ],
     partials: [
         Discord.Partials.Channel,
