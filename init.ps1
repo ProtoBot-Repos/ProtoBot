@@ -5,19 +5,19 @@ $version = node -v
 if ($version -match '16.9' -or '17' -or '18') {
     Write-Output "Installing node modules"
 
-    Start-Sleep -Seconds 2
+    Start-Sleep -Seconds 1
 
     npm install -d
     
     Write-Output "Creating private directory"
 
-    Start-Sleep -Seconds 2
+    Start-Sleep -Seconds 1
 
     mkdir private
 
     Write-Output "Creating config.json (installing prettier to format the file)"
 
-    Start-Sleep -Seconds 2
+    Start-Sleep -Seconds 1
 
     npm install -d prettier
 
@@ -25,9 +25,21 @@ if ($version -match '16.9' -or '17' -or '18') {
 
     node init.js
 
+    #$en = Read-Host "Where would you like the database to be stored?"
+
+    #Write-Output "Adding DB directories"
+
+    Start-Sleep -Seconds 1
+
+    #echo "$($en)" >> ./private/DBLOCATION.pbdb
+
+    #mkdir $en/ProtoBot-db
+    #mkdir $en/ProtoBot-db/guilds
+    #mkdir $en/ProtoBot-db/users
+
     Write-Output "Cleaning up files"
 
-    Start-Sleep -Seconds 2
+    Start-Sleep -Seconds 1
 
     Remove-Item './init.js'
 
