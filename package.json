@@ -23,6 +23,7 @@
     "@zuzak/owo": "^1.16.1",
     "discord-api-types": "^0.37.5",
     "discord.js": "^14.1.2",
+    "prettier": "^2.7.1",
     "random-org": "^2.2.0",
     "typescript": "^4.8.4"
   }
