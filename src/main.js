@@ -21,7 +21,8 @@ const client = new Discord.Client({
         Discord.GatewayIntentBits.GuildVoiceStates,
         Discord.GatewayIntentBits.GuildWebhooks,
         Discord.GatewayIntentBits.Guilds,
-        Discord.GatewayIntentBits.MessageContent
+        Discord.GatewayIntentBits.MessageContent,
+        Discord.GatewayIntentBits.GuildMessages
     ],
     partials: [
         Discord.Partials.Channel,
@@ -40,6 +41,8 @@ for (const file of command_f) {
 
     client.commands.set(command.data.name, command);
 }
+
+client.on("messageCreate", (message) => console.log("heherherh"));
 
 /* Event handler */
 for (const file of event_f) {
