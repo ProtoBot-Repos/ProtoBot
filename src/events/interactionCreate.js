@@ -18,7 +18,7 @@ module.exports = {
                 emphemeral: true
             });
 
-            return await command.execute(interaction);
+            await command.execute(interaction);
         } catch (err) {
             new Discord.WebhookClient({
                 id: config.Discord.webhooks.errors.id,
