@@ -11,3 +11,6 @@ r.sh
 
 /.vscode
 /src/db
+/src/ar
+/src/msg-c
+/src/commands/voice.js
