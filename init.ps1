@@ -4,20 +4,21 @@ $version = node -v
 
 if ($version -match '16.9' -or '17' -or '18') {
     Write-Output "Installing node modules"
+    if( -not (Test-Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VISUALSTUDIO) ) {
+        Write-Output "VISUAL STUDIO NOT INSTALLED. VOICE FUNCTIONALITY WILL BE DISABLED (for sodium)."
+        
+        npm install -d @discordjs/builders @discordjs/rest @types/node @zuzak/owo discord-api-types discord.js random-org typescript 
+    } else {
+        npm config set msvs_version 2015
+        npm install -d 
+    }
 
-    Start-Sleep -Seconds 1
-
-    npm install -d
     
     Write-Output "Creating private directory"
-
-    Start-Sleep -Seconds 1
 
     mkdir private
 
     Write-Output "Creating config.json (installing prettier to format the file)"
-
-    Start-Sleep -Seconds 1
 
     npm install -d prettier
 
@@ -29,8 +30,6 @@ if ($version -match '16.9' -or '17' -or '18') {
 
     #Write-Output "Adding DB directories"
 
-    Start-Sleep -Seconds 1
-
     #echo "$($en)" >> ./private/DBLOCATION.pbdb
 
     #mkdir $en/ProtoBot-db
@@ -38,8 +37,6 @@ if ($version -match '16.9' -or '17' -or '18') {
     #mkdir $en/ProtoBot-db/users
 
     Write-Output "Cleaning up files"
-
-    Start-Sleep -Seconds 1
 
     Remove-Item './init.js'
 

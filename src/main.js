@@ -69,35 +69,4 @@ client.login(config.Discord.token);
 //     ]
 // });
 
-/* Error handling */
-process.on('uncaughtException', err => {
-    new Discord.WebhookClient({
-        id: config.Discord.webhooks.errors.id,
-        token: config.Discord.webhooks.errors.token
-    }).send({
-        embeds: 
-        [
-            new Discord.EmbedBuilder()
-                .setColor(0xFF0000)
-                .setTitle("Uncaught Exception")
-                .setDescription(`\`\`\`${err.name}\n${err.message}\n\n${err.stack}\`\`\``)
-        ]
-    });
-});
-
-process.on('unhandledRejection', (reason, promise) => {
-    new Discord.WebhookClient({
-        id: config.Discord.webhooks.errors.id,
-        token: config.Discord.webhooks.errors.token
-    }).send({
-        embeds: 
-        [
-            new Discord.EmbedBuilder()
-                .setColor(0xFF0000)
-                .setTitle("Unhandled Rejection")
-                .setDescription(`\`\`\`${reason}\n${promise}\`\`\``)
-        ]
-    });
-}); //idk if this or the one in interactionCreate is doing this but just keep it here
-
 // Read more into docs for better error handling lol
