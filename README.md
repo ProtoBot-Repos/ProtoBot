@@ -1,6 +1,6 @@
 # ProtoBot
 
-A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
+A multipurpose protogen developed by Stanford47 and DEATHB4DEFEAT
 
 ### Currently being rewritten
 
@@ -13,7 +13,6 @@ A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
 #### Moderation:
 
 - [x] Ban
-- [x] ~~Kick~~ (Being put off for the forseeable future)
 - [x] Timeout
 
 #### Fun:
@@ -24,8 +23,6 @@ A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
 - [x] Together
 
 #### Utilities:
-
-- [x] ~~Server settings~~ (Put off until needed)
 - [ ] Calculator
 
 ### More features and commands will be added over time
