@@ -2,7 +2,7 @@
 
 A multipurpose protogen developed by Stanford47, Sandium, and DEATHB4DEFEAT
 
-### Currently being rewritten in JavaScript (and some C++)
+### Currently being rewritten
 
 ### Here is a list of all in-progress/finished features
 
