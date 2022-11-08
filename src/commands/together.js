@@ -118,3 +118,5 @@ module.exports = {
         })
     }
 }
+
+// make sure to change to discord.js when they add it

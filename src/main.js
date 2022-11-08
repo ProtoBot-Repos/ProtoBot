@@ -1,8 +1,6 @@
 const config = require("../private/config.json");
 const Discord = require("discord.js");
-// const path = require("path");
 const fs = require("fs");
-// const checkIsWindows = require("./helpers/check-os");
 
 const client = new Discord.Client({
     intents: [
@@ -22,7 +20,8 @@ const client = new Discord.Client({
         Discord.GatewayIntentBits.GuildWebhooks,
         Discord.GatewayIntentBits.Guilds,
         Discord.GatewayIntentBits.MessageContent,
-        Discord.GatewayIntentBits.GuildMessages
+        Discord.GatewayIntentBits.GuildMessages,
+        Discord.GatewayIntentBits.GuildVoiceStates
     ],
     partials: [
         Discord.Partials.Channel,
@@ -42,8 +41,6 @@ for (const file of command_f) {
     client.commands.set(command.data.name, command);
 }
 
-client.on("messageCreate", (message) => console.log("heherherh"));
-
 /* Event handler */
 for (const file of event_f) {
     const event = require(`./events/${file}`);
@@ -52,7 +49,6 @@ for (const file of event_f) {
         client.once(event.name, (...args) => event.execute(...args));
     } else {
         client.on(event.name, (...args) => event.execute(...args));
-        //client.on("messageCreate", (...args) => console.log("hhhhhhh"))
     }
 }
 
@@ -68,5 +64,3 @@ client.login(config.Discord.token);
 //         }
 //     ]
 // });
-
-// Read more into docs for better error handling lol

@@ -3,14 +3,16 @@ package-lock.json
 private
 
 /src/helpers/process.js
-/src/helpers/calculator
+/src/db/help/end.h
 
 a.js
 a.ts
 r.sh
 
+/src/helpers/calculator
 /.vscode
 /src/db
 /src/ar
 /src/msg-c
-/src/commands/voice.js
+/src/commands/ip 
+#no this has nothing to do with ip adresses shut up
