@@ -18,10 +18,10 @@ module.exports = {
                 .setDescription(`\`\`\`\n
 Node Version:\t${process.version}\n\n
 Message Response Time (Avg):\t${fs.existsSync("./private/res.pbf") ? avg_res() : -(Date.now() - interaction.createdTimestamp)} ms\n\n
-Message Response Time:\t ${-(Date.now() - interaction.createdTimestamp)} ms\n\n
 Discord API Latency:\t${interaction.client.ws.ping} ms\n\n
-Bot Uptime: ${uptime} secs
-\`\`\``)
+Bot Uptime: ${process.uptime()} secs
+\`\`\``) //fix uptime later
+        // i need to do more stuff
                 .setColor(0x6CFC89)
             ]
         });

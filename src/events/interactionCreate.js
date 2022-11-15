@@ -1,5 +1,6 @@
 const config = require('../../private/config.json');
 const Discord = require("discord.js");
+const { add_res } = require("../helpers/time");
 
 module.exports = {
     name: "interactionCreate",
@@ -17,7 +18,9 @@ module.exports = {
                 emphemeral: true
             });
 
-            return await command.execute(interaction);
+            await command.execute(interaction);
+
+            add_res(interaction.createdTimestamp);
         } catch (err) {
             new Discord.WebhookClient({
                 id: config.Discord.webhooks.errors.id,
@@ -32,10 +35,12 @@ module.exports = {
                     ]
             });
 
-            return await interaction.reply({
+            await interaction.reply({
                 content: `There was an issue executing the command \`${interaction.commandName}\`.\nThe returned error is \`\`\`\n${err}\`\`\`\nIf this error keeps happening, please create an issue at https://github.com/ProtoBot-Repos/Protobot/Issues with the error message.`,
                 ephemeral: true
-            });
+            }); //strange error with this happening. fix this latre
+
+            return add_res(interaction.createdTimestamp);
         }
     }
 }
