@@ -24,5 +24,6 @@ A multipurpose protogen developed by Stanford47 and DEATHB4DEFEAT
 
 #### Utilities:
 - [ ] Calculator
+- [x] Info
 
 ### More features and commands will be added over time
