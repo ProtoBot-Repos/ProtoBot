@@ -8,14 +8,9 @@ module.exports = {
     console.log("ready!!!!");
 
     client.user.setPresence({
-      status: "idle",
+      status: "online",
       afk: false,
-      activities: [
-        {
-          name: "soon",
-          type: "Playing",
-        },
-      ],
+      activities: 
     });
   },
 };

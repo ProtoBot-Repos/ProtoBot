@@ -7,7 +7,7 @@ if ($version -match '16.9' -or '17' -or '18' -or '19') {
     if( -not (Test-Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VISUALSTUDIO) ) {
         Write-Output "VISUAL STUDIO NOT INSTALLED. VOICE FUNCTIONALITY WILL BE DISABLED (for sodium)."
         
-        npm install -d @discordjs/builders @discordjs/rest @types/node @zuzak/owo discord-api-types discord.js random-org typescript node-fetch luxon
+        npm install -d @discordjs/builders @discordjs/rest @types/node @zuzak/owo discord-api-types discord.js random-org typescript node-fetch luxon systeminformation
     } else {
         npm config set msvs_version 2015
         npm install -d 

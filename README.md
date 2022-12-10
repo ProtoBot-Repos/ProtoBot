@@ -1,6 +1,6 @@
 # ProtoBot
 
-A multipurpose protogen developed by Stanford47 and DEATHB4DEFEAT
+A multipurpose protogen developed by Stanford47
 
 ### Currently being rewritten
 
