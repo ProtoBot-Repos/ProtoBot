@@ -1,5 +1,7 @@
 # ProtoBot
 
+# Hi the inactivity in the repo is because Im working on rewriting some other stuff. If you want to see what i am rewriting, go to the [SimpleModBot repo](https://github.com/simplemodbot/simplemodbot)
+
 A multipurpose protogen developed by Stanford47
 
 ### Currently being rewritten
